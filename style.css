@@ -1,0 +1,209 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    /* font-family: 'sansation'; */
+    
+}
+
+#bg {
+    min-height: 100%;
+    width: 100vw;
+    /* background:radial-gradient(to bottom right,rgba(255, 74, 224, 0.25),rgba(255, 154, 103, 0.65),rgba(251, 220, 254, 0.16)); */
+
+    background: radial-gradient(100.13% 175.35% at 0.75% 0%, rgba(255, 74, 225, 0.418) 17%, rgba(255, 154, 103, 0.664) 120.62%, rgba(251, 220, 254, 0.342) 100%);
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#content {
+    min-height: 40vh;
+    width: 60vh;
+    background: rgba(255, 255, 255, 0.329);
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background: rgba(0, 0, 0, 0.705); */
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-bottom: 8vh;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.6rem;
+    font-family: 'Federo', sans-serif;
+    color: rgb(77, 54, 21);
+}
+
+
+input[type=text]{
+    height: 6.5vh;
+    width:30vh ;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    outline: none;   
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.9rem;
+    text-align: center;
+    color:rgb(100, 57, 57) ;
+}
+
+label{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    color:rgba(152, 97, 97, 1);
+    font-family: 'Federo', sans-serif;
+}
+
+.guessSubmit{
+    height: 5.5vh;
+    width: 20vh;
+    margin: 0rem auto;
+    /* outline: none; */
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    background: linear-gradient(180deg, rgba(253, 63, 53, 0.39) 34.38%, rgba(244, 163, 163, 0.3015) 100%);
+    cursor: pointer;
+}
+
+
+#prev{
+    margin-top: 2.3rem;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    color: rgb(151, 88, 59);
+}
+
+#hint{
+    color: rgba(87, 42, 21, 0.747);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2.1rem;
+
+}
+
+#result{
+    margin-top: 1.7rem;
+    margin-bottom: 2.1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 0.3rem 7rem;
+    /* background-color: aqua; */
+    
+}
+
+#content>p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* ****** propmpt css******* */
+
+#bgpp{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(129, 129, 129, 0.651);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backdrop-filter: blur(3px);
+}
+
+#pdiv{
+    height: 35vh;
+    width: 85vh;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0.4rem 0.8rem 3rem rgba(0, 0, 0, 0.397);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#head{
+    color: rgb(247, 63, 63);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    
+}
+
+#btn{
+    padding: 0.7rem 0.5rem;
+    
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+    background-color: rgb(121, 202, 121);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: -2.8rem;
+
+}
+
+.btn1{
+    position: absolute;
+    padding: 0.8rem 1.6rem;
+}
+
+/* promptt css end */
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    /* #bg{
+        background-color: rgba(137, 43, 226, 0.568);
+    } */
+
+    #content{
+        min-height: 30vh;
+        width:40vh;
+
+    }
+
+    input[type=text]{
+        width: 25vh;
+    }
+
+    p{
+       margin: 0.8rem 1.4rem;
+       font-size: 1.1rem;
+       text-align: center;
+    }
+
+    label{
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+}
