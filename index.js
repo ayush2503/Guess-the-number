@@ -10,11 +10,13 @@ let result=document.querySelector('#result');
 
 // variables
 let msg;
+let para=document.querySelector('#para')
+para.style.height
 
 
 // for random number
 let guessno=Math.floor(Math.random()*100)+1;
-console.log(guessno);
+// console.log(guessno);
 let guess_count = 1;
 guessfeild.focus();
 
@@ -77,7 +79,7 @@ function cprompt(){
         guessfeild.value='';
         guessfeild.focus()
         guessno=Math.floor(Math.random()*100)+1;
-        console.log(guessno);
+        // console.log(guessno);
     
     }
     
@@ -96,8 +98,9 @@ function endgame(){
 
 let abc=()=>{
     
-    console.log('mc')
+    // console.log('mc')
     let userg =Number(guessfeild.value);
+
     
     if(guess_count===1){
         prev.textContent='previous guesses: '
@@ -109,7 +112,7 @@ let abc=()=>{
     if(guess_count===10){
         
         hint.textContent='';
-        prev.textContent='!!! Game Over!!!';
+        prev.textContent='';
         result.textContent='';
         msg='!!! Game Over!!!'
         endgame()
@@ -153,6 +156,14 @@ let abc=()=>{
 
 }
 
+guessfeild.addEventListener('keydown', (e)=>{
+    
+    if(e.key==="Enter"){
+        abc()
+    }
+}
+    
+)
 submit.addEventListener('click', abc);
 
 

@@ -22,6 +22,8 @@ html,body {
     align-items: center;
     justify-content: center;
     position: absolute;
+    padding-left: 5rem;
+    padding-right: 4rem;
 }
 
 #content {
@@ -119,6 +121,8 @@ label{
 #content>p{
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+
 /* ****** propmpt css******* */
 
 #bgpp{
@@ -130,6 +134,7 @@ label{
     align-items: center;
     position: absolute;
     backdrop-filter: blur(3px);
+    padding: 3rem;
 }
 
 #pdiv{
@@ -177,7 +182,10 @@ label{
 /* promptt css end */
 
 
-
+#para{
+    /* background-color: red; */
+    text-align: center
+}
 
 
 
@@ -206,4 +214,26 @@ label{
         margin-top: 2rem;
         font-size: 1rem;
     }
+    #result{
+        padding: .3rem 1.3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #head{
+        font-size: 1.4rem;
+        letter-spacing: 0.15rem;
+        margin: 0%;
+    }
+
+    #btn{
+        font-size: 0.9rem;
+    }
+
+    h1{
+        line-height: 3.7rem;
+        font-size: 2.1rem;
+        margin-bottom: 5vh;
+    }
+    
 }
