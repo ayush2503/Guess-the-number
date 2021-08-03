@@ -69,6 +69,11 @@ input[type=text]{
     color:rgb(100, 57, 57) ;
 }
 
+::placeholder{
+    color: rgba(68, 68, 68, 0.164);
+    font-size: 1rem;
+}
+
 label{
     text-align: center;
     font-size: 1.8rem;
