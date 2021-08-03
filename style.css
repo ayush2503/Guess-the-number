@@ -23,7 +23,7 @@ html,body {
     justify-content: center;
     position: absolute;
     padding-left: 5rem;
-    padding-right: 4rem;
+    padding-right: 5rem;
 }
 
 #content {
@@ -192,9 +192,67 @@ label{
     text-align: center
 }
 
+@media only screen and (max-width: 480px) {
+    h1{
+        margin-top: -9rem;
+        font-size: 1.6rem;
+        letter-spacing: normal
+    }
+
+    #bg{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #content{
+        min-height: 15vh;
+        width: 40vh;
+    }
+
+    label{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #result{
+        padding: .3rem 1.3rem;
+        margin-top: 1rem;
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    input[type=text]{
+        width: 20vh;
+        height: 5vh;
+        margin: 1.4rem auto;
+
+    }
+
+    .guessSubmit{
+        height: 4.5vh;
+        width: 15vh;
+        font-size: 0.9rem;
+    }
+    #prev{
+        margin-top: 1.3rem;
+        font-size: 1rem;
+    }
+
+    #head{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #btn{
+        font-size: 1.1rem;
+    }
 
 
-@media only screen and (max-width:768px) {
+}
+
+@media only screen and (min-width:600px) and (max-width:778px  ) {
     /* #bg{
         background-color: rgba(137, 43, 226, 0.568);
     } */
@@ -242,3 +300,22 @@ label{
     }
     
 }
+
+
+@media only screen and (max-width:320px) {
+    h1{
+        font-size: 1rem;
+        margin-top: -8rem;
+        letter-spacing: normal;
+    }
+
+    #pdiv{
+        height: 25vh;
+    }
+
+    #head{
+        font-size: 1rem;
+    }
+
+}
+
