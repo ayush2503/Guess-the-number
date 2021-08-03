@@ -74,7 +74,7 @@ function cprompt() {
         prev.textContent = '';
         result.textContent = '';
         result.style.backgroundColor = '';
-        guessfeild.placeholder='1-100'
+        guessfeild.placeholder='Guess b/w 1-100'
 
         guessfeild.value = '';
         guessfeild.focus()
